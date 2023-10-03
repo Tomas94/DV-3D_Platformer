@@ -1,5 +1,7 @@
 fileFormatVersion: 2
 guid: 4d0dfb8023686f64c896b034f82c7f69
+labels:
+- Architecture
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
