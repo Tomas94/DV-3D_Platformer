@@ -18,10 +18,10 @@ MonoBehaviour:
     m_Value: 0.9
   intensity:
     m_OverrideState: 1
-    m_Value: 2.52
+    m_Value: 1.6
   scatter:
-    m_OverrideState: 0
-    m_Value: 0.7
+    m_OverrideState: 1
+    m_Value: 0.85
   clamp:
     m_OverrideState: 0
     m_Value: 65472
@@ -30,7 +30,7 @@ MonoBehaviour:
     m_Value: {r: 1, g: 0.72632974, b: 0.495283, a: 1}
   highQualityFiltering:
     m_OverrideState: 0
-    m_Value: 0
+    m_Value: 1
   skipIterations:
     m_OverrideState: 0
     m_Value: 1
@@ -40,7 +40,7 @@ MonoBehaviour:
     dimension: 1
   dirtIntensity:
     m_OverrideState: 1
-    m_Value: 7
+    m_Value: 4.4
 --- !u!114 &-681385576260653110
 MonoBehaviour:
   m_ObjectHideFlags: 3
@@ -62,7 +62,7 @@ MonoBehaviour:
     m_Value: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.2
+    m_Value: 0.18
   clamp:
     m_OverrideState: 0
     m_Value: 0.05
@@ -127,7 +127,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 0.5
+    m_Value: 0.31
 --- !u!114 &6481977915507240524
 MonoBehaviour:
   m_ObjectHideFlags: 3
