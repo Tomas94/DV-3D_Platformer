@@ -55,8 +55,8 @@ public class PlayerMovement : MonoBehaviour
     Vector3 DirectionVector()
     {
         Vector3 dir = new Vector3(0, 0, 0);
-        dir.x = Input.GetAxis("Horizontal");
-        dir.z = Input.GetAxis("Vertical");
+        dir.z = Input.GetAxis("Horizontal");
+        dir.x = Input.GetAxis("Vertical");
         return dir;
     }
 
