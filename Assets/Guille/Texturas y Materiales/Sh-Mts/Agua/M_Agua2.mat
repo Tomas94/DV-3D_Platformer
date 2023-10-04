@@ -22,7 +22,7 @@ Material:
     m_TexEnvs:
     - _TexturaAgua:
         m_Texture: {fileID: 2800000, guid: 4409c048255ee1e429a69a77b24afcdb, type: 3}
-        m_Scale: {x: 0.0027, y: 0.0027}
+        m_Scale: {x: 0.0025, y: 0.0025}
         m_Offset: {x: 0, y: 0}
     - unity_Lightmaps:
         m_Texture: {fileID: 0}
