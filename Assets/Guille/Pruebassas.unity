@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 791737071}
-  m_IndirectSpecularColor: {r: 0.17904586, g: 0.22419162, b: 0.3059988, a: 1}
+  m_IndirectSpecularColor: {r: 0.18299182, g: 0.22867984, b: 0.30680102, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -140,7 +140,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &33339135
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,6 +353,25 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!1 &96731953 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6235034831793597691, guid: c0cb69e7d01be1d4793ccfd24227914c, type: 3}
+  m_PrefabInstance: {fileID: 6504925146654502521}
+  m_PrefabAsset: {fileID: 0}
+--- !u!64 &96731957
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96731953}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: 274550171001013036, guid: 282c9314a209c894eb7c5def09559a10, type: 3}
 --- !u!1 &246923614
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +427,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27656
+  m_Name: pb_Mesh28076
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -572,7 +591,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27610
+  m_Name: pb_Mesh28010
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1205,7 +1224,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27556
+  m_Name: pb_Mesh27930
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1369,7 +1388,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-493352
+  m_Name: pb_Mesh28040
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -1606,7 +1625,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &703334661
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1733,7 +1752,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 1, g: 0.8727718, b: 0.75, a: 1}
+  m_Color: {r: 1, g: 0.67435247, b: 0.6084906, a: 1}
   m_Intensity: 6.58
   m_Range: 10
   m_SpotAngle: 30
@@ -1791,14 +1810,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 791737070}
-  m_LocalRotation: {x: -0.45440596, y: 0.12059909, z: -0.062245816, w: -0.8803957}
+  m_LocalRotation: {x: -0.19656473, y: -0.75459963, z: 0.26056626, w: -0.56925124}
   m_LocalPosition: {x: 5.6999993, y: 32.52, z: 7.689999}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
-  m_LocalEulerAnglesHint: {x: 54.6, y: -375.6, z: 0}
+  m_LocalEulerAnglesHint: {x: 38.1, y: -254.06, z: 0}
 --- !u!114 &791737073
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2058,7 +2077,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_RootOrder
-      value: 7
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.x
@@ -2135,6 +2154,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_Name
       value: Tierra_Biselada_8x8 (4)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
@@ -3650,6 +3673,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &896859618
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 896859613}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 396.86594, y: 90.46488, z: 214.7959}
+  m_Center: {x: -191.03499, y: 7.44, z: -100}
 --- !u!1 &928077113
 GameObject:
   m_ObjectHideFlags: 0
@@ -3771,7 +3807,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27718
+  m_Name: pb_Mesh28130
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -3945,7 +3981,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-493354
+  m_Name: pb_Mesh28018
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -4120,7 +4156,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.11281001
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.z
@@ -4132,7 +4168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.4
+      value: 8.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4189,6 +4225,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_Name
       value: Tierra_Biselada_8x8 (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
@@ -5704,13 +5744,26 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &1021314290
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1021314285}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 396.86594, y: 90.46488, z: 214.7959}
+  m_Center: {x: -191.03499, y: 6.7, z: -100}
 --- !u!43 &1042034897
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27712
+  m_Name: pb_Mesh28124
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -5884,7 +5937,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27722
+  m_Name: pb_Mesh28136
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6392,7 +6445,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27696
+  m_Name: pb_Mesh28108
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6556,7 +6609,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-27138
+  m_Name: pb_Mesh28056
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -6739,7 +6792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1308720478
 Transform:
   m_ObjectHideFlags: 0
@@ -6766,8 +6819,9 @@ Transform:
   - {fileID: 1120135416}
   - {fileID: 795352474}
   - {fileID: 851780668}
+  - {fileID: 1551178377}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1335075530
 GameObject:
@@ -7122,7 +7176,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.x
@@ -7199,6 +7253,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_Name
       value: Tierra_Biselada_8x8 (7)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
@@ -8714,6 +8772,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &1362595371
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1362595366}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 396.86594, y: 155.65585, z: 214.7959}
+  m_Center: {x: -191.03499, y: -25.5, z: -100}
 --- !u!1001 &1401144121
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -8723,7 +8794,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_RootOrder
-      value: 8
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.x
@@ -8731,7 +8802,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.12544
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.z
@@ -8743,7 +8814,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.2
+      value: 7.9
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -8800,6 +8871,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_Name
       value: Tierra_Biselada_8x8 (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
@@ -10315,6 +10390,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &1401144127
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1401144122}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 396.86594, y: 90.46488, z: 214.7959}
+  m_Center: {x: -191.03499, y: 6.71, z: -100}
 --- !u!1001 &1411809598
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -11922,7 +12010,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27602
+  m_Name: pb_Mesh27992
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12096,7 +12184,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27648
+  m_Name: pb_Mesh28068
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -12264,6 +12352,121 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1551178376
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1551178377}
+  - component: {fileID: 1551178379}
+  - component: {fileID: 1551178378}
+  m_Layer: 0
+  m_Name: Point Light (8)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1551178377
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551178376}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -37.36, y: 29.28, z: 12.75}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1308720478}
+  m_RootOrder: 14
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1551178378
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551178376}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 474bcb49853aa07438625e644c072ee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Version: 1
+  m_UsePipelineSettings: 1
+  m_AdditionalLightsShadowResolutionTier: 2
+  m_LightLayerMask: 1
+  m_CustomShadowLayers: 0
+  m_ShadowLayerMask: 1
+  m_LightCookieSize: {x: 1, y: 1}
+  m_LightCookieOffset: {x: 0, y: 0}
+--- !u!108 &1551178379
+Light:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1551178376}
+  m_Enabled: 1
+  serializedVersion: 10
+  m_Type: 2
+  m_Shape: 0
+  m_Color: {r: 1, g: 0.46135104, b: 0, a: 1}
+  m_Intensity: 218.85
+  m_Range: 50
+  m_SpotAngle: 30
+  m_InnerSpotAngle: 21.80208
+  m_CookieSize: 10
+  m_Shadows:
+    m_Type: 2
+    m_Resolution: -1
+    m_CustomResolution: -1
+    m_Strength: 1
+    m_Bias: 0.05
+    m_NormalBias: 0.4
+    m_NearPlane: 0.2
+    m_CullingMatrixOverride:
+      e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    m_UseCullingMatrixOverride: 0
+  m_Cookie: {fileID: 0}
+  m_DrawHalo: 0
+  m_Flare: {fileID: 0}
+  m_RenderMode: 0
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingLayerMask: 1
+  m_Lightmapping: 4
+  m_LightShadowCasterMode: 0
+  m_AreaSize: {x: 1, y: 1}
+  m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
+  m_BoundingSphereOverride: {x: 0, y: 0, z: 0, w: 0}
+  m_UseBoundingSphereOverride: 0
+  m_UseViewFrustumForShadowCasterCull: 1
+  m_ShadowRadius: 0
+  m_ShadowAngle: 0
 --- !u!1 &1657712994
 GameObject:
   m_ObjectHideFlags: 0
@@ -12284,7 +12487,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1657712995
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -12625,7 +12828,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1689619037
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12801,7 +13004,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1781853254}
   m_LocalRotation: {x: 0.2438605, y: 0.3851767, z: -0.10227277, w: 0.8841444}
-  m_LocalPosition: {x: -73.8, y: 85.4, z: -21.3}
+  m_LocalPosition: {x: -71.3, y: 84.6, z: -24.6}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13202,7 +13405,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 0.14064373
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalScale.z
@@ -13214,7 +13417,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.5999994
+      value: 3.7
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_LocalPosition.z
@@ -13271,6 +13474,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
       propertyPath: m_Name
       value: Tierra_Biselada_8x8 (3)
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6e312fbdae104814a95afea7d1ed2d52, type: 3}
@@ -14786,6 +14993,19 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &1806366292
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1806366287}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 396.86594, y: 50, z: 214.7959}
+  m_Center: {x: -191.03499, y: 26.23, z: -100}
 --- !u!1001 &1907855938
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14872,6 +15092,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: ed034c3f0eedd804289612e477c0e5f7, type: 3}
       propertyPath: m_Name
       value: Tierra_Biselada_4x4_Doble
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: ed034c3f0eedd804289612e477c0e5f7, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed034c3f0eedd804289612e477c0e5f7, type: 3}
@@ -16364,13 +16588,26 @@ MonoBehaviour:
   m_SelectedFaces: 
   m_SelectedEdges: []
   m_SelectedVertices: 
+--- !u!65 &1907855944
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907855939}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 114.7959, y: 100, z: 114.7959}
+  m_Center: {x: -50, y: 52.52, z: -50}
 --- !u!43 &1984558266
 Mesh:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh27642
+  m_Name: pb_Mesh28062
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -16558,7 +16795,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 1
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!64 &1989241317
 MeshCollider:
   m_ObjectHideFlags: 0
@@ -17003,7 +17240,7 @@ Mesh:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: pb_Mesh-1308
+  m_Name: pb_Mesh-1620
   serializedVersion: 10
   m_SubMeshes:
   - serializedVersion: 2
@@ -17295,7 +17532,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5119475760145038981, guid: 52672374fa283484480ce57386c320aa, type: 3}
       propertyPath: m_SelectedEdges.Array.size
-      value: 8
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5119475760145038981, guid: 52672374fa283484480ce57386c320aa, type: 3}
       propertyPath: m_Tangents.Array.data[4].y
@@ -18027,7 +18264,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5119475760145038981, guid: 52672374fa283484480ce57386c320aa, type: 3}
       propertyPath: m_SelectedVertices.Array.size
-      value: 16
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5119475760145038981, guid: 52672374fa283484480ce57386c320aa, type: 3}
       propertyPath: m_Textures0.Array.data[133].x
@@ -18577,6 +18814,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Agua
       objectReference: {fileID: 0}
+    - target: {fileID: 5119475760145039006, guid: 52672374fa283484480ce57386c320aa, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 52672374fa283484480ce57386c320aa, type: 3}
 --- !u!1001 &6504925146654502521
@@ -18586,9 +18827,21 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 5586635439039647022, guid: c0cb69e7d01be1d4793ccfd24227914c, type: 3}
+      propertyPath: m_StaticShadowCaster
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6235034831793597691, guid: c0cb69e7d01be1d4793ccfd24227914c, type: 3}
       propertyPath: m_Name
       value: PostOffice1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235034831793597691, guid: c0cb69e7d01be1d4793ccfd24227914c, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 6235034831793597691, guid: c0cb69e7d01be1d4793ccfd24227914c, type: 3}
+      propertyPath: m_StaticEditorFlags
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6758948155864053313, guid: c0cb69e7d01be1d4793ccfd24227914c, type: 3}
       propertyPath: m_RootOrder

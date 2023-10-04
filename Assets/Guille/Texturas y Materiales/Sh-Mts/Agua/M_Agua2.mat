@@ -38,10 +38,10 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _AddDepth: 3.02
+    - _AddDepth: 4.13
     - _Depth: 135.9
     - _DepthFalloff: 123.7
-    - _MultiplyDepth: 0.38
+    - _MultiplyDepth: 0.33
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScaleGradientNoise: 0.22
