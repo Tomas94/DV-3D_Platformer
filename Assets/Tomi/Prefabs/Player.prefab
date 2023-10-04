@@ -141,7 +141,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.6, y: 8.45, z: 1}
+  m_Size: {x: 2.6, y: 9.25, z: 1}
   m_Center: {x: 0, y: -0.65, z: 0}
 --- !u!1 &7026994449652984622
 GameObject:
@@ -185,9 +185,11 @@ GameObject:
   - component: {fileID: 7026994450590254658}
   - component: {fileID: 7026994450590254657}
   - component: {fileID: 7026994450590254660}
+  - component: {fileID: 855859611}
+  - component: {fileID: 364876696}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -244,6 +246,7 @@ MonoBehaviour:
   _ground:
     serializedVersion: 2
     m_Bits: 64
+  _rb: {fileID: 0}
   _direction: {x: 0, y: 0, z: 0}
   velocity: {x: 0, y: 0, z: 0}
   _speed: 20
@@ -251,7 +254,35 @@ MonoBehaviour:
   _jumpForce: 20
   _fallSpeed: 2
   _isFalling: 0
+  _isJumping: 0
   _isGrounded: 0
+--- !u!65 &855859611
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7026994450590254656}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.6, y: 8.45, z: 1}
+  m_Center: {x: -0.00000008065429, y: 2.65, z: 0.5}
+--- !u!114 &364876696
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7026994450590254656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c6a7e12c54a927e44b3a396b57d08bc3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _maxHP: 5
+  _currentHP: 0
 --- !u!1 &7026994450629791391
 GameObject:
   m_ObjectHideFlags: 0
