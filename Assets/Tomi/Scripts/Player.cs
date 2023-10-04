@@ -19,6 +19,7 @@ public class Player : MonoBehaviour, IDamageable
 
     public void Die()
     {
+        transform.position = GameManager.lastCheckpoint;
         Debug.Log("Game Over");
     }
 
@@ -26,5 +27,14 @@ public class Player : MonoBehaviour, IDamageable
     {
         _currentHP--;
         if(_currentHP <= 0 ) Die();
+    }
+
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Water"))
+        {
+            Die();
+        }
     }
 }

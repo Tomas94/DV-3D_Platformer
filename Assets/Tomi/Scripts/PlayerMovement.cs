@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] Transform _shadow;
     [SerializeField] LayerMask _ground;
 
-    Rigidbody _rb;
+    public Rigidbody _rb;
 
     [SerializeField] Vector3 _direction;
     [SerializeField] Vector3 velocity;
@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
     [SerializeField] float _jumpForce;
     [SerializeField] float _fallSpeed;
 
-    [SerializeField] bool _isFalling;
+    public bool _isFalling;
     [SerializeField] bool _isJumping;
     [SerializeField] bool _isGrounded;
 
@@ -60,7 +60,7 @@ public class PlayerMovement : MonoBehaviour
         return dir;
     }
 
-    IEnumerator Jump()
+    public IEnumerator Jump()
     {
         _isJumping = true;
        // _isFalling = false;
