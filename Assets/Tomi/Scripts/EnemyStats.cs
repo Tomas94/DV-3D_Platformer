@@ -7,6 +7,7 @@ public class EnemyStats : MonoBehaviour, IDamageable
     [SerializeField] float _maxHP = 1;
     [SerializeField] float _currentHP;
     [SerializeField] float _bounceValue;
+    [SerializeField] float _pushvalue;
 
 
 
@@ -41,15 +42,25 @@ public class EnemyStats : MonoBehaviour, IDamageable
 
     private void OnTriggerEnter(Collider other)
     {
-        PlayerMovement _player = other.GetComponent<PlayerMovement>();
-        if (_player != null)
+
+        if (other.CompareTag("Player"))
         {
-            if (_player._isFalling)
+            PlayerMovement _player = other.GetComponent<PlayerMovement>();
+            if (_player != null)
             {
-                _player._rb.AddForce(Vector3.up * _bounceValue, ForceMode.Impulse);
-                TakeDamage();
+                if (_player._isFalling)
+                {
+                    _player._rb.AddForce(Vector3.up * _bounceValue, ForceMode.Impulse);
+                    TakeDamage();
+                }
+                else
+                {
+                    other.GetComponent<Player>().TakeDamage();
+                    var dir = other.transform.position - transform.position;
+                    _player._rb.AddForce(dir.normalized * _pushvalue, ForceMode.Impulse);
+                }
             }
         }
-        
+
     }
 }

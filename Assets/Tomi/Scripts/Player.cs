@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class Player : MonoBehaviour, IDamageable
 {
     [SerializeField] float _maxHP;
     [SerializeField] float _currentHP;
+    [SerializeField] TextMeshProUGUI life;
 
     void Start()
     {
@@ -15,12 +17,14 @@ public class Player : MonoBehaviour, IDamageable
     void Update()
     {
         if(Input.GetKeyUp(KeyCode.R))TakeDamage();
+        life.text = "HP: " + _currentHP.ToString();
     }
 
     public void Die()
     {
         transform.position = GameManager.lastCheckpoint;
         Debug.Log("Game Over");
+        _currentHP = _maxHP;
     }
 
     public void TakeDamage()
