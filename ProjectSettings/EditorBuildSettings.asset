@@ -11,7 +11,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Guille/finaldemierda.unity
     guid: fd7360e07db039f4894b563353f26899
-  - enabled: 0
-    path: "Assets/Guille/Nivel1Dise\xF1o 1.unity"
-    guid: 61eb487a7e57bf44d87fed266e6435fc
   m_configObjects: {}
