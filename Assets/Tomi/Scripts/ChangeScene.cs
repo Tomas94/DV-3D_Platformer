@@ -10,15 +10,21 @@ public class ChangeScene : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.Escape))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
-            SceneManager.LoadScene(0);
+            Debug.Log("A");
+            Application.Quit();
         }
 
         if (Input.GetKeyDown(KeyCode.R))
         {
             SceneManager.LoadScene(currentScene);
         }
+    }
+
+    public void NextScene(string nextScene)
+    {
+        SceneManager.LoadScene(nextScene);
     }
 
     private void OnTriggerEnter(Collider other)

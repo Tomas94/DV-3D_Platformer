@@ -6,9 +6,12 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Guille/Dise\xF1o.unity"
-    guid: bd9e38e0d9ca11d4faf8ff9c0dd40a0c
+    path: "Assets/Guille/Nivel1Dise\xF1o.unity"
+    guid: bdb9d101b6415b942b75af7b71ee9419
   - enabled: 1
-    path: Assets/Scenes/SampleScene.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Guille/finaldemierda.unity
+    guid: fd7360e07db039f4894b563353f26899
+  - enabled: 0
+    path: "Assets/Guille/Nivel1Dise\xF1o 1.unity"
+    guid: 61eb487a7e57bf44d87fed266e6435fc
   m_configObjects: {}
