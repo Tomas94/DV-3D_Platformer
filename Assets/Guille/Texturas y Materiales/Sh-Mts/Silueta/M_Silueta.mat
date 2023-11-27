@@ -51,12 +51,12 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _CantidadDither: 1
-    - _PoderFresnel: 1
+    - _CantidadDither: 2
+    - _PoderFresnel: 3
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Velocidadlineas: 0.2
     m_Colors:
     - _ColorFresnel: {r: 3.3183339, g: 0.8686738, b: 0.27797562, a: 0}
-    - _Tilling: {r: 1, g: 0.5, b: 0, a: 0}
+    - _Tilling: {r: 1, g: 0.12, b: 0, a: 0}
   m_BuildTextureStacks: []
