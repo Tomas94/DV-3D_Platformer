@@ -45,7 +45,7 @@ Material:
     - _Alpha: 1
     - _FadeAmmount: 1
     - _MaxDistance: 0
-    - _MinDistance: 20
+    - _MinDistance: 60
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Roughness: 0.5
