@@ -55,8 +55,8 @@ Material:
     - _PoderFresnel: 1
     - _QueueControl: 0
     - _QueueOffset: 0
-    - _Velocidadlineas: 1
+    - _Velocidadlineas: 0.2
     m_Colors:
-    - _ColorFresnel: {r: 6.6366673, g: 1.7373475, b: 0.5559512, a: 0}
-    - _Tilling: {r: 1, g: 0.05, b: 0, a: 0}
+    - _ColorFresnel: {r: 3.3183339, g: 0.8686738, b: 0.27797562, a: 0}
+    - _Tilling: {r: 1, g: 0.5, b: 0, a: 0}
   m_BuildTextureStacks: []
