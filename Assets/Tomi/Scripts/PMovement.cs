@@ -14,7 +14,7 @@ public class PMovement : MonoBehaviour
     [SerializeField] float _gravityForce;
     [SerializeField] GroundCheck groundCheck;
     public LayerMask groundLayer;
-    public SpriteRenderer _spriteRenderer;
+   // public SpriteRenderer _spriteRenderer;
 
     private void Awake()
     {
@@ -32,12 +32,12 @@ public class PMovement : MonoBehaviour
         if (!IsGrounded())
         {
             _fallDir = FallingForce();
-            _spriteRenderer.color = Color.white;
+           // _spriteRenderer.color = Color.white;
         }
         else
         {
             _fallDir = Vector3.zero;
-            _spriteRenderer.color = Color.red;
+           // _spriteRenderer.color = Color.red;
         }
         _direction = InputVector();
         if (_direction == Vector3.zero) { _rb.velocity = Vector3.zero; }

@@ -8,7 +8,7 @@ public class GroundCheck : MonoBehaviour
     Collider _currentground;
     public bool isGrounded;
 
-    private void OnTriggerEnter(Collider other)
+    /*private void OnTriggerEnter(Collider other)
     {
         if (((1 << other.gameObject.layer) & _ground) != 0)
         {
@@ -20,7 +20,7 @@ public class GroundCheck : MonoBehaviour
 
         }
     }
-
+    */
     private void OnTriggerExit(Collider other)
     {
         if (((1 << other.gameObject.layer) & _ground) != 0 && other == _currentground)
@@ -28,6 +28,18 @@ public class GroundCheck : MonoBehaviour
             Debug.Log("Saliendo de " + other.name);
             isGrounded = false;
             _currentground = null;
+        }
+    }
+
+    private void OnTriggerStay(Collider other)
+    {
+        if (((1 << other.gameObject.layer) & _ground) != 0)
+        {
+            if (_currentground != null || _currentground == other) return;
+
+            _currentground = other;
+            isGrounded = true;
+
         }
     }
 }
