@@ -1,3 +1,4 @@
+using Unity.Mathematics;
 using UnityEngine;
 
 [RequireComponent(typeof(Rigidbody))]
@@ -5,22 +6,30 @@ public class PMovement : MonoBehaviour
 {
     Rigidbody _rb;
     [SerializeField] GroundCheck _groundCheck;
-
-    Vector3 _direction;
+    Interact _pInteract;
+    [SerializeField] Vector3 _direction;
     Vector3 _fallVector;
-    
+
     [SerializeField] float _speed;
+    [SerializeField] float _pullForce;
+    [SerializeField] float _pushForce;
     [SerializeField] float _gravityForce;
+    public float dotValue;
+
 
     private void Awake()
     {
         _rb = GetComponent<Rigidbody>();
+        _pInteract = GetComponentInChildren<Interact>();
     }
 
     void Update()
     {
         _fallVector = FallingForce();
         _direction = DirVector();
+        FacingDirection(_direction, _pInteract.IsPicking);
+
+        dotValue = Vector3.Dot(_direction, transform.forward);
 
         if (_direction == Vector3.zero) { _rb.velocity = Vector3.zero; }
 
@@ -28,7 +37,7 @@ public class PMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        _rb.velocity = (_direction + _fallVector) * _speed;
+        FixedMove();
     }
 
     public Vector3 DirVector()
@@ -37,10 +46,32 @@ public class PMovement : MonoBehaviour
         dir.x = Input.GetAxisRaw("Horizontal");
         dir.z = Input.GetAxisRaw("Vertical");
         dir = Quaternion.Euler(0, 45, 0) * dir;
-
-        if (dir != Vector3.zero) transform.forward = dir;
-
         return dir.normalized;
+    }
+
+    void FacingDirection(Vector3 dir, bool movModificator)
+    {
+        if (movModificator)
+        {
+            return;
+        }
+        if (dir != Vector3.zero) transform.forward = dir;
+    }
+
+    public void FixedMove()
+    {
+        if (!_pInteract.IsPicking)
+        {
+            _rb.velocity = (_direction + _fallVector) * _speed;
+            return;
+        }
+
+        if (_pInteract.IsPicking)
+        {
+            if (dotValue >= 0.9f) _rb.velocity = (_direction + _fallVector) * _pushForce;
+            else if (dotValue <= -0.9f) _rb.velocity = (_direction + _fallVector) * _pullForce;
+            else _rb.velocity = Vector3.zero;
+        }
     }
 
     Vector3 FallingForce()
@@ -48,5 +79,4 @@ public class PMovement : MonoBehaviour
         if (!_groundCheck.isGrounded) return Vector3.down * _gravityForce;
         return Vector3.zero;
     }
-
 }
