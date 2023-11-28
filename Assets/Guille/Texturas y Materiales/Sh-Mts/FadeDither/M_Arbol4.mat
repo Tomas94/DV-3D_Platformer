@@ -44,8 +44,8 @@ Material:
     m_Floats:
     - _Alpha: 1
     - _FadeAmmount: 1
-    - _MaxDistance: 0
-    - _MinDistance: 60
+    - _MaxDistance: -49.11
+    - _MinDistance: 5.6
     - _QueueControl: 0
     - _QueueOffset: 0
     - _Roughness: 0.5
