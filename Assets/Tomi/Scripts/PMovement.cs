@@ -10,6 +10,7 @@ public class PMovement : MonoBehaviour
     [SerializeField] Vector3 _direction;
     Vector3 _fallVector;
 
+    [SerializeField] int _movAngle;
     [SerializeField] float _speed;
     [SerializeField] float _pullForce;
     [SerializeField] float _pushForce;
@@ -45,7 +46,7 @@ public class PMovement : MonoBehaviour
         Vector3 dir = new Vector3(0, 0, 0);
         dir.x = Input.GetAxisRaw("Horizontal");
         dir.z = Input.GetAxisRaw("Vertical");
-        dir = Quaternion.Euler(0, 45, 0) * dir;
+        dir = Quaternion.Euler(0, _movAngle, 0) * dir;
         return dir.normalized;
     }
 
