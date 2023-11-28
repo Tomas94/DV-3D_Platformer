@@ -8,7 +8,13 @@ public class Entity : MonoBehaviour, IDamageable
     [SerializeField] protected int _maxHP;
     [SerializeField] protected int _currentHP;
     [SerializeField] protected float _speed;
+
+    [Header("Attack Stats")]
     [SerializeField] protected int _damagePower;
+    [SerializeField] protected float _atkCooldown;
+    [SerializeField] protected float _atkDuration;
+
+
 
     virtual public void Awake()
     {
