@@ -7,7 +7,7 @@ public class Player : MonoBehaviour, IDamageable
 {
     [SerializeField] float _maxHP;
     [SerializeField] float _currentHP;
-    [SerializeField] TextMeshProUGUI life;
+    //[SerializeField] TextMeshProUGUI life;
 
     void Start()
     {
@@ -16,8 +16,8 @@ public class Player : MonoBehaviour, IDamageable
  
     void Update()
     {
-        if(Input.GetKeyUp(KeyCode.R))TakeDamage();
-        life.text = "HP: " + _currentHP.ToString();
+    //    if(Input.GetKeyUp(KeyCode.R))TakeDamage();
+    //    life.text = "HP: " + _currentHP.ToString();
     }
 
     public void Die()
@@ -27,12 +27,11 @@ public class Player : MonoBehaviour, IDamageable
         _currentHP = _maxHP;
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        _currentHP--;
+        _currentHP-= damage;
         if(_currentHP <= 0 ) Die();
     }
-
 
     private void OnTriggerEnter(Collider other)
     {

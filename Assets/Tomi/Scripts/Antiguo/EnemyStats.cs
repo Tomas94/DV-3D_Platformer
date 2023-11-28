@@ -21,7 +21,6 @@ public class EnemyStats : MonoBehaviour, IDamageable
 
     }
 
-    // Update is called once per frame
     void Update()
     {
         Die();
@@ -35,32 +34,32 @@ public class EnemyStats : MonoBehaviour, IDamageable
         }
     }
 
-    public void TakeDamage()
+    public void TakeDamage(int damage)
     {
-        _currentHP--;
+        _currentHP -= damage;
     }
 
     private void OnTriggerEnter(Collider other)
     {
 
-        if (other.CompareTag("Player"))
-        {
-            PlayerMovement _player = other.GetComponent<PlayerMovement>();
-            if (_player != null)
-            {
-                if (_player._isFalling)
+        /*if (other.CompareTag("Player"))
                 {
-                    _player._rb.AddForce(Vector3.up * _bounceValue, ForceMode.Impulse);
-                    TakeDamage();
-                }
-                else
-                {
-                    other.GetComponent<Player>().TakeDamage();
-                    var dir = other.transform.position - transform.position;
-                    _player._rb.AddForce(dir.normalized * _pushvalue, ForceMode.Impulse);
-                }
-            }
-        }
+                    PlayerMovement _player = other.GetComponent<PlayerMovement>();
+                    if (_player != null)
+                    {
+                        if (_player._isFalling)
+                        {
+                            _player._rb.AddForce(Vector3.up * _bounceValue, ForceMode.Impulse);
+                            TakeDamage();
+                        }
+                        else
+                        {
+                            other.GetComponent<Player>().TakeDamage();
+                            var dir = other.transform.position - transform.position;
+                            _player._rb.AddForce(dir.normalized * _pushvalue, ForceMode.Impulse);
+                        }
+                    }
+               }*/
 
     }
 }

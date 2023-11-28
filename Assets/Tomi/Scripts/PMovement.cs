@@ -7,16 +7,17 @@ public class PMovement : MonoBehaviour
     Rigidbody _rb;
     [SerializeField] GroundCheck _groundCheck;
     Interact _pInteract;
-    [SerializeField] Vector3 _direction;
+    Vector3 _direction;
     Vector3 _fallVector;
 
+    float _speed;
     [SerializeField] int _movAngle;
-    [SerializeField] float _speed;
+    [SerializeField] float _gravityForce;
     [SerializeField] float _pullForce;
     [SerializeField] float _pushForce;
-    [SerializeField] float _gravityForce;
-    public float dotValue;
+    float dotValue;
 
+    public float Speed { set { _speed= value; } }
 
     private void Awake()
     {

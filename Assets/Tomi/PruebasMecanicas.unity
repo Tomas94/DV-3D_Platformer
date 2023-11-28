@@ -169,30 +169,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 2019373852, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
-      propertyPath: m_Size.y
-      value: 2.0617218
-      objectReference: {fileID: 0}
-    - target: {fileID: 2019373852, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
-      propertyPath: m_Center.y
-      value: 1.2465744
-      objectReference: {fileID: 0}
-    - target: {fileID: 2019373853, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
-      propertyPath: _interactableLayer.m_Bits
-      value: 128
-      objectReference: {fileID: 0}
-    - target: {fileID: 7651855778935250148, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
-      propertyPath: _movAngle
-      value: 45
-      objectReference: {fileID: 0}
-    - target: {fileID: 7651855778935250148, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
-      propertyPath: _pullForce
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 7651855778935250148, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
-      propertyPath: _pushForce
-      value: 20
-      objectReference: {fileID: 0}
     - target: {fileID: 7651855778935250149, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
       propertyPath: m_RootOrder
       value: 3
@@ -241,10 +217,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    - target: {fileID: 7651855779439696969, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
-      propertyPath: m_Material
-      value: 
-      objectReference: {fileID: 13400000, guid: 2798f17358240ff44ab123d36258be30, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
 --- !u!1 &621603438
