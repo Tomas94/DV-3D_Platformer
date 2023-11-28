@@ -38,9 +38,9 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Contraste: 1
+    - _Contraste: 1.02
     - _HueOffset: 0
     - _Posterizado: 32
-    - _Saturacion: 1
+    - _Saturacion: 0.97
     m_Colors: []
   m_BuildTextureStacks: []
