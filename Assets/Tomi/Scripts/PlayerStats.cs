@@ -3,46 +3,33 @@ using System.Collections.Generic;
 using UnityEditor.SceneManagement;
 using UnityEngine;
 
-public class PlayerStats : MonoBehaviour, IDamageable
+public class PlayerStats : Entity
 {
     PMovement _movScript;
+    PlayerView _playerView;
     Dash _playerDash;
-
-    [Header("Stats Player")]
-    [SerializeField] float _speed;
-    [SerializeField] int _maxHP;
-    [SerializeField] int _currentHP;
-    [SerializeField] int _damagePower;
 
     [Header("Variables Dash")]
     [SerializeField] float _dashSpeed;
     [SerializeField] float _duration;
     [SerializeField] float _cooldownTime;
 
-    private void Awake()
+    public override void Awake()
     {
+        base.Awake();
+        _playerView = GetComponent<PlayerView>();
         _movScript = GetComponent<PMovement>();
         _movScript.Speed = _speed;
-        _currentHP = _maxHP;
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.R)) DashAcquire(); 
+        _playerView.MovementState(_movScript.Direction != Vector3.zero);
+        if (Input.GetKeyDown(KeyCode.R)) DashLearned(); 
         if (Input.GetKeyDown(KeyCode.E)) _playerDash?.StartDash();
     }
 
-    public void TakeDamage(int damage)
-    {
-
-    }
-
-    public void Die()
-    {
-        throw new System.NotImplementedException();
-    }
-
-    void DashAcquire()
+    void DashLearned()
     {
         if(_playerDash != null) Destroy(_playerDash);
         _playerDash = gameObject.AddComponent<Dash>(); 

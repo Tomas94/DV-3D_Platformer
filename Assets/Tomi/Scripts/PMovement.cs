@@ -18,6 +18,7 @@ public class PMovement : MonoBehaviour
     float dotValue;
 
     public float Speed { set { _speed= value; } }
+    public Vector3 Direction { get {  return _direction; } }
 
     private void Awake()
     {
