@@ -15,6 +15,10 @@ public class PlayerStats : Entity
     [SerializeField] float _duration;
     [SerializeField] float _cooldownTime;
 
+    [Header("Botones")]
+    [SerializeField] KeyCode _attackKey;
+    [SerializeField] KeyCode _dashKey;
+
     public override void Awake()
     {
         base.Awake();
@@ -24,15 +28,21 @@ public class PlayerStats : Entity
         _playerMov.Speed = _speed;
     }
 
+    private void Start()
+    {
+        DashLearned();
+        AttackLearned();
+    }
+
     private void Update()
     {
         _playerView.MovementState(_playerMov.Direction != Vector3.zero);
         
-        if (Input.GetKeyDown(KeyCode.R)) DashLearned(); 
-        if(Input.GetKeyDown(KeyCode.T)) AttackLearned();
+        if (Input.GetKeyDown(KeyCode.Keypad1)) DashLearned(); 
+        if(Input.GetKeyDown(KeyCode.Keypad2)) AttackLearned();
 
-        if (Input.GetKeyDown(KeyCode.E)) _playerDash?.StartDash();
-        if (Input.GetKeyDown(KeyCode.F)) _playerAtk?.Attack();
+        if (Input.GetKeyDown(_dashKey)) _playerDash?.StartDash();
+        if (Input.GetKeyDown(_attackKey)) _playerAtk?.Attack();
     }
 
     void DashLearned()

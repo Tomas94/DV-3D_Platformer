@@ -6,6 +6,9 @@ public class Interact : MonoBehaviour
     public Action<Transform> StartInteraction;
     public Action DropObject;
 
+    [Header("Boton Interacción")]
+    [SerializeField] KeyCode _interactKey;
+
     [SerializeField] float _interactRange;
     [SerializeField] LayerMask _interactableLayer;
     [SerializeField] bool _isInteracting;
@@ -14,9 +17,9 @@ public class Interact : MonoBehaviour
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && PushableObjectInRange()) Interacting();
+        if (Input.GetKeyDown(_interactKey) && PushableObjectInRange()) Interacting();
 
-        if (Input.GetKeyUp(KeyCode.Space) && _isInteracting) Dropping();
+        if (Input.GetKeyUp(_interactKey) && _isInteracting) Dropping();
     }
 
     void Interacting()

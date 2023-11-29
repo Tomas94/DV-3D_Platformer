@@ -130,6 +130,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1938143163, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
+      propertyPath: _atkCooldown
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938143163, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
+      propertyPath: _atkDuration
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 7651855778935250149, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
       propertyPath: m_RootOrder
       value: 3
