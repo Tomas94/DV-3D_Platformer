@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Stamp : MonoBehaviour
@@ -13,7 +12,8 @@ public class Stamp : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            GameManager.currentStamps++;
+            //GameManager.currentStamps++;
+            Manager.Instance.stampsCollected++;
             Destroy(gameObject);
         }
     }

@@ -12,6 +12,6 @@ EditorBuildSettings:
     path: Assets/Guille/Escenas/cambiarescena.unity
     guid: 80105cf2112da8d47999eff32adc0b5a
   - enabled: 1
-    path: Assets/Guille/Escenas/Nivel_1_Remake.unity
+    path: Assets/Scenes/Nivel_1_Remake.unity
     guid: 6f8373db75dd56645ba504f66a81f092
   m_configObjects: {}

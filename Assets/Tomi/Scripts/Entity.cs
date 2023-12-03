@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Entity : MonoBehaviour, IDamageable
 {
@@ -12,7 +13,7 @@ public class Entity : MonoBehaviour, IDamageable
     [SerializeField] protected float _atkCooldown;
     [SerializeField] protected float _atkDuration;
 
-
+    public int CurrentHP { get { return _currentHP; } }
 
     virtual public void Awake()
     {
@@ -27,6 +28,6 @@ public class Entity : MonoBehaviour, IDamageable
 
     virtual public void Die()
     {
-        
+        _currentHP = _maxHP;
     }
 }

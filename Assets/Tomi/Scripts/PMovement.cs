@@ -15,9 +15,10 @@ public class PMovement : MonoBehaviour
     [SerializeField] float _pullForce;
     [SerializeField] float _pushForce;
     float dotValue;
+    public bool _canMove = true;
 
-    public float Speed { set { _speed= value; } }
-    public Vector3 Direction { get {  return _direction; } }
+    public float Speed { set { _speed = value; } }
+    public Vector3 Direction { get { return _direction; } }
 
     private void Awake()
     {
@@ -44,6 +45,7 @@ public class PMovement : MonoBehaviour
 
     public Vector3 DirVector()
     {
+        if(!_canMove) return Vector3.zero;
         Vector3 dir = new Vector3(0, 0, 0);
         dir.x = Input.GetAxisRaw("Horizontal");
         dir.z = Input.GetAxisRaw("Vertical");
@@ -80,5 +82,27 @@ public class PMovement : MonoBehaviour
     {
         if (!_groundCheck.isGrounded) return Vector3.down * _gravityForce;
         return Vector3.zero;
+    }
+
+    void ChangeMoveState(bool canMove)
+    {
+        _canMove = canMove;
+    }
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("NPC"))
+        {
+            DialogBox interactableCharacter = other.GetComponent<DialogBox>();
+            interactableCharacter.InteraccionDialogo += ChangeMoveState;
+        }
+    }
+
+    private void OnTriggerExit(Collider other)
+    {
+        if (other.CompareTag("NPC"))
+        {
+            DialogBox interactableCharacter = other.GetComponent<DialogBox>();
+            interactableCharacter.InteraccionDialogo -= ChangeMoveState;
+        }
     }
 }

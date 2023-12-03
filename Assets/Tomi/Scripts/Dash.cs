@@ -7,6 +7,7 @@ public class Dash : MonoBehaviour
     float _duration;
     float _cooldownTime;
     bool _canDash;
+    public  bool _isDashing;
     PMovement _pMov;
     Transform _player;
     Rigidbody _rb;
@@ -25,6 +26,7 @@ public class Dash : MonoBehaviour
     public void StartDash()
     {
         if (!_canDash) return;
+        _isDashing = true;
         _canDash = false;
         _pMov.enabled = false;
         _rb.AddForce(_player.forward * _dashSpeed, ForceMode.Impulse);
@@ -41,6 +43,7 @@ public class Dash : MonoBehaviour
             yield return null;
         }
         _pMov.enabled = true;
+        _isDashing = false;
     }
 
     IEnumerator CooldownReset()

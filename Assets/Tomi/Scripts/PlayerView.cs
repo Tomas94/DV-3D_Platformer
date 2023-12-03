@@ -9,16 +9,9 @@ public class PlayerView : MonoBehaviour
         _anim = GetComponentInChildren<Animator>();       
     }
 
-    void Update()
-    {
-
-    }
-
     public void MovementState(bool isMoving)
     {
         if(isMoving)  _anim.SetBool("Moving", true);
         else _anim.SetBool("Moving", false);
     }
-
-
 }
