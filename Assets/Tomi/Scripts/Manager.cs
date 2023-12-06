@@ -32,8 +32,25 @@ public class Manager : MonoBehaviour
         SceneManager.LoadScene(name);
     }
 
+    public void RestartGame()
+    {
+        SceneManager.LoadScene(0);
+    }
+
     void Update()
     {
+
+
+        if (Input.GetKeyDown(KeyCode.B))
+        {
+            RestartGame();
+        }
+
+        if(Input.GetKeyDown(KeyCode.Escape))
+        {
+            Application.Quit();
+        }
+
         stampsAmountText.text = stampsCollected.ToString();
     }
 
