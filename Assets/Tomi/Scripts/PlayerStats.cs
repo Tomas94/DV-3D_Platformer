@@ -19,6 +19,8 @@ public class PlayerStats : Entity
     [SerializeField] KeyCode _attackKey;
     [SerializeField] KeyCode _dashKey;
 
+
+
     public delegate void updateLifeBar();
     public event updateLifeBar actualizarVida;
 
@@ -33,22 +35,25 @@ public class PlayerStats : Entity
 
     private void Start()
     {
-        DashLearned();
-        AttackLearned();
+        //DashLearned();
+        //AttackLearned();
     }
 
     private void Update()
     {
         _playerView.MovementState(_playerMov.Direction != Vector3.zero);
-        if(!_canMove)return;
+        if (!_canMove) return;
 
         if (Input.GetKeyDown(KeyCode.P))
         {
             TakeDamage(1);
         }
 
-        if (Input.GetKeyDown(KeyCode.Keypad1)) DashLearned(); 
-        if(Input.GetKeyDown(KeyCode.Keypad2)) AttackLearned();
+        if (Manager.Instance.dashLearned) DashLearned();
+        if (Manager.Instance.attackLearned) AttackLearned();
+
+        //if (Input.GetKeyDown(KeyCode.Keypad1)) DashLearned(); 
+        //if(Input.GetKeyDown(KeyCode.Keypad2)) AttackLearned();
 
         if (Input.GetKeyDown(_dashKey)) _playerDash?.StartDash();
         if (Input.GetKeyDown(_attackKey)) _playerAtk?.Attack();
@@ -70,13 +75,15 @@ public class PlayerStats : Entity
 
     void DashLearned()
     {
-        if(_playerDash != null) Destroy(_playerDash);
-        _playerDash = gameObject.AddComponent<Dash>(); 
+        Manager.Instance.dashLearned = false;
+        if (_playerDash != null) Destroy(_playerDash);
+        _playerDash = gameObject.AddComponent<Dash>();
         _playerDash?.Inicializar(_dashSpeed, _duration, _cooldownTime, true, transform, this.GetComponent<Rigidbody>(), _playerMov);
     }
 
     void AttackLearned()
     {
+        Manager.Instance.attackLearned = false;
         _playerAtk?.Inicializar(_damagePower, _atkCooldown, _atkDuration, true);
     }
 

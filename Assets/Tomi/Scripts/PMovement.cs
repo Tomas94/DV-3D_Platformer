@@ -3,6 +3,9 @@ using UnityEngine;
 [RequireComponent(typeof(Rigidbody))]
 public class PMovement : MonoBehaviour
 {
+    public string nextScene;
+
+
     Rigidbody _rb;
     [SerializeField] GroundCheck _groundCheck;
     Interact _pInteract;
@@ -94,6 +97,11 @@ public class PMovement : MonoBehaviour
         {
             DialogBox interactableCharacter = other.GetComponent<DialogBox>();
             interactableCharacter.InteraccionDialogo += ChangeMoveState;
+        }
+
+        if(other.CompareTag("Van") && Manager.Instance.levelComplete)
+        {
+            Manager.Instance.NextScene(nextScene);
         }
     }
 

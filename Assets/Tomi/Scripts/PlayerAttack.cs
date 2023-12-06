@@ -1,4 +1,5 @@
 using System.Collections;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class PlayerAttack : MonoBehaviour
@@ -49,7 +50,15 @@ public class PlayerAttack : MonoBehaviour
             timer += Time.deltaTime;
             yield return null;
         }
-        _canAttack = true; 
+        _canAttack = true;
     }
 
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.CompareTag("Dummy"))
+        {
+            other.GetComponent<Dummy>()._currentHP -= 1;
+            StartCoroutine(other.GetComponent<Dummy>().HItted());
+        }
+    }
 }
