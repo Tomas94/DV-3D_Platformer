@@ -6,12 +6,12 @@ public class Dummy : MonoBehaviour
 {
     [SerializeField] protected int _maxHP;
     [SerializeField] public int _currentHP;
-    public Renderer renderer;
-
+    public Renderer Renderer;
+    public Color _colorDaño;
 
     private void Awake()
     {
-        renderer = GetComponent<Renderer>();
+        Renderer = GetComponent<Renderer>();
     }
 
     void Start()
@@ -22,12 +22,10 @@ public class Dummy : MonoBehaviour
     public IEnumerator HItted()
     {    
 
-        renderer.material.color = Color.red;
+        Renderer.material.color = _colorDaño;
         yield return new WaitForSeconds(1);
-        renderer.material.color = Color.white;
+        Renderer.material.color = Color.white;
     }
-
-
 
     void Update()
     {

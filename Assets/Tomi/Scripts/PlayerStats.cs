@@ -1,3 +1,4 @@
+using System.Collections;
 using UnityEngine;
 
 public class PlayerStats : Entity
@@ -9,6 +10,10 @@ public class PlayerStats : Entity
     PlayerView _playerView;
     public Dash _playerDash;
     bool _canMove = true;
+
+    public Color _DañoColor;
+    public float _intensidadEmissive = 2.0f;
+    public Material _PlayerMat;
 
     [Header("Variables Dash")]
     [SerializeField] float _dashSpeed;
@@ -64,6 +69,7 @@ public class PlayerStats : Entity
         if (_playerDash._isDashing) return;
         base.TakeDamage(damage);
         actualizarVida?.Invoke();
+        StartCoroutine(ChangeColor());
     }
 
     public override void Die()
@@ -88,6 +94,17 @@ public class PlayerStats : Entity
     }
 
     void ChangeMoveState(bool canMove) => _canMove = canMove;
+
+    public IEnumerator ChangeColor()
+    {
+        Color emissiveColor = _DañoColor * _intensidadEmissive;
+        _PlayerMat.SetColor("_EmissionColor", emissiveColor);
+
+        yield return new WaitForSeconds(0.5f);
+
+        _PlayerMat.SetColor("_EmissionColor", Color.black);
+        Debug.Log("Color daño");
+    }
 
     private void OnTriggerEnter(Collider other)
     {
