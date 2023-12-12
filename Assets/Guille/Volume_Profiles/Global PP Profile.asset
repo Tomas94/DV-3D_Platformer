@@ -104,13 +104,13 @@ MonoBehaviour:
     m_Value: 38
   colorFilter:
     m_OverrideState: 1
-    m_Value: {r: 1.0498095, g: 1.0215534, b: 1.1581247, a: 1}
+    m_Value: {r: 1.0180621, g: 0.91145873, b: 0.9174694, a: 1}
   hueShift:
     m_OverrideState: 1
     m_Value: 5
   saturation:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: -5
 --- !u!114 &5417643463805613538
 MonoBehaviour:
   m_ObjectHideFlags: 3
