@@ -23601,6 +23601,10 @@ PrefabInstance:
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1938143163, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
+      propertyPath: _speed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 1938143163, guid: e58d4223cffe3504cbdd64c67675abb5, type: 3}
       propertyPath: _dashKey
       value: 32
       objectReference: {fileID: 0}

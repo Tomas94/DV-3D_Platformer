@@ -41,7 +41,7 @@ Material:
     - _AddDepth: 70
     - _Depth: 135.9
     - _DepthFalloff: 123.7
-    - _MultiplyDepth: 0.007
+    - _MultiplyDepth: 0.004
     - _QueueControl: 0
     - _QueueOffset: 0
     - _ScaleGradientNoise: 9.5
